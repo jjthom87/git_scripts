@@ -3,7 +3,6 @@
 old="$IFS"
 IFS=' '
 str="$*"
-echo "$str"
 IFS=$old
 
 git add .
