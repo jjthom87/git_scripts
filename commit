@@ -2,7 +2,7 @@
 
 old="$IFS"
 IFS=' '
-str="'$*'"
+str="$*"
 echo "$str"
 IFS=$old
 
