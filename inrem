@@ -1,0 +1,9 @@
+#!/bin/sh
+
+old="$IFS"
+IFS=' '
+str="$*"
+IFS=$old
+
+git init
+git remote add origin "$str"
