@@ -1,0 +1,16 @@
+#!/bin/sh
+
+old="$IFS"
+IFS=' '
+str="'$*'"
+echo "$str"
+IFS=$old
+
+git add .
+git commit -m "$str"
+if [[ $(git branch -vv) == *"origin/master"* ]]
+then
+    git push
+else
+    git push --set-upstream origin master
+fi

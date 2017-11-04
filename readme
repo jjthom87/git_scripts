@@ -1,0 +1,8 @@
+git add .
+git commit -m 'readme'
+if [[ $(git branch -vv) == *"origin/master"* ]]
+then
+    git push
+else
+    git push --set-upstream origin master
+fi
