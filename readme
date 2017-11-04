@@ -1,5 +1,5 @@
 git add .
-git commit -m 'readme'
+git commit -m 'readme add/update'
 if [[ $(git branch -vv) == *"origin/master"* ]]
 then
     git push
